@@ -17,5 +17,5 @@ def hello():
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # апролдйуц
     app.run(port=8080)
