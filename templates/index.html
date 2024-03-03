@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dynamic 123 Space App
+{% endblock %}
+
+{% block body %}
+    {% if name is defined and name|length > 0 %}
+        <h1>Привет, {{ name }}</h1>
+    {% else %}
+        <h1>Привет</h1>
+    {% endif %} 
+    <form action="/hello" method="POST">
+        <input type="text" name="name" placeholder="Имя">
+        <button type="submit">Отправить</button>
+    </form>
+{% endblock %}
